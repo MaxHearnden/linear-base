@@ -165,7 +165,7 @@ instance Semigroup a => Semigroup (Maybe a) where
   Just x <> Just y = Just (x <> y)
 
 instance Semigroup a => Semigroup (Solo a) where
-  Solo x <> Solo y = Solo (x <> y)
+  MkSolo x <> MkSolo y = Solo (x <> y)
 
 -- See Data.List.Linear for instance ... => Semigroup [a]
 
